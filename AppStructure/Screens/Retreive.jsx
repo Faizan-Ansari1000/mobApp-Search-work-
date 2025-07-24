@@ -13,7 +13,7 @@ export default function Retreive() {
     const getData = useCallback(async () => {
         try {
             setLoading(true);
-            const res = await axios.get('https://sms.ilmwasooli.com/temp/gettestingdata');
+            const res = await axios.get('');
             setPostData(res.data.Data);
         } catch (error) {
             console.log("ERROR: ", error.message);
